@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pac-Man</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Pac-Man</h1>
+    <button id="start-btn">Play</button>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div id="score-panel">Score: <span id="score">0</span></div>
+    <div id="lives-panel">Lives: <span id="lives">3</span></div>
+    <div id="game-board"></div>
+  </div>
+
+  <div id="game-over-screen" class="hidden">
+    <h2>¡Game Over!</h2>
+    <button id="restart-btn">Jugar de nuevo</button>
+  </div>
+
+  <audio id="bg-music" src="music.mp3" loop></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>

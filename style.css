@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#score-panel,
+#lives-panel {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  gap: 1px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background: #111;
+}
+
+.wall {
+  background: #333;
+}
+
+.dot {
+  background: rgb(131, 248, 151);
+  border-radius: 50%;
+}
+
+.pacman {
+  background-color: rgb(40, 4, 182);
+  border-radius: 50%;
+}
+
+.ghost {
+  background: #f32e1f;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-screen,
+#game-over-screen {
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
